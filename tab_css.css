@@ -1,0 +1,163 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* 全体を覆うdiv */
+.tab-container {
+    width: 100%;
+    padding-top: 20px;
+    /*border: 1px solid #57ccbc;*/
+    background-color: #ffffff;
+  }
+
+  /*タブ(label)のスタイル*/
+  .tab-item {
+    /*初期タブボタン設定*/
+    display: block;
+    float: left;
+    flex-wrap: nowrap;
+    /*width: 50%;*/
+    width: 20%;
+    height: 30px;
+
+    /*tab frame*/
+    border: 1px solid #000000;
+    border-radius: 10px 10px 0 0;
+    /*margin-right: 1px;*/
+
+    /*タブ内の文字位置調整*/
+    line-height: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: #000000;
+    background-color: #ffffff;
+    /*text-align: center;*/
+    transition: all 0.2s;
+    
+  }
+  
+  /* inputボタンは目には見えないように */
+  input[name="tab-item"] {
+    display: none;
+  }
+  
+  /* タブで切り替えたいコンテンツの部分。ここはお好みで */
+  .tab-content {
+    display: none;
+    /*padding: 20px;*/
+    overflow: hidden;
+    clear: both;
+    /*text-align: center;*/
+  }
+  
+  /* 選択されているタブのコンテンツを表示させる */
+  #a:checked ~ #a-content,
+  #b:checked ~ #b-content,
+  #c:checked ~ #c-content,
+  #d:checked ~ #d-content,
+  #e:checked ~ #e-content {
+    display: block;
+  }
+  
+  /* 選択されていることがわかるように、選択されているタブはスタイルを変える */
+  .tab-container input:checked + .tab-item {
+    background-color: #000000;
+    color: #fff;
+  }
+
+/*選択タブで表示されるコンテンツ制御*/
+.PR {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    /*範囲確認用!!*/
+    /*margin-bottom: 50px;*/
+    /*background-color: #ff00ff;*/
+}
+.PR-left {
+    width: 50%;
+    /*text-align: center;*/
+}
+.PR-left img {
+    width: 100%;
+    height: auto;
+}
+.PR-right {
+    width: 50%;
+    padding: 10px;
+    color: #000000;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+    /*フォント制御必要？*/
+    /*font-family: Arial, Helvetica, sans-serif;*/
+    /*範囲確認用!!*/
+    /*background-color: aqua;*/
+}
+/*子要素内の上下中央揃え*/
+.PR-right, .PR-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Desktop View*/
+/* ------------------------------------ */
+/* ▼PC用デザイン(大)として付け足すデザイン */
+/* ------------------------------------ */
+@media screen and (max-width: 1920px){}
+
+
+/*Desktop View*/
+/* ------------------------------------ */
+/* ▼PC用デザインとして付け足すデザイン */
+/* ------------------------------------ */
+@media screen and (max-width: 1366px) {
+  .PR-left img {
+    width: 95%;
+    height: auto;
+}
+  
+}
+
+/*Tablet View*/
+/* -------------------------------------------- */
+/* ▼タブレット用デザインとして付け足すデザイン */
+/* -------------------------------------------- */
+@media screen and (max-width: 960px) {
+  
+.PR {
+    flex-direction: column;
+  }
+.PR-left {
+    width: 100%;
+    /*text-align: center;*/
+}
+.PR-left img {
+    width: 100%;
+    height: auto;
+}
+.PR-right {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    line-height: 24px;   
+}
+  
+}
+
+/*SP View*/
+/* -------------------------------------------- */
+/* ▼SP用デザインとして付け足すデザイン(max:480!) */
+/* -------------------------------------------- */
+@media screen and (max-width: 500px) {
+  .PR-right {
+    width: 100%;
+    padding: 10px;
+    font-size: 12px;
+    line-height: 18px;
+    
+}
+
+
+}
