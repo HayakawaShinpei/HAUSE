@@ -1,0 +1,127 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* --------------------------------------------- */
+/* ▼デスクトップファースト (全環境に共通のデザイン) */
+/* --------------------------------------------- */
+
+.sec01 {
+    display: flex;
+    width: 100%;
+    background-color: #ffffff;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 70px;
+}
+
+.sec01 h3 {
+    font-size: 24px;
+    line-height: 36px;
+}
+.sec01 h2 {
+    margin-top: 30px;
+    font-size: 40px;
+}
+
+.sns-icons {
+    margin: 50px 0px;
+    /*width: 300px;
+    height: 55px;
+    background-color: black;*/
+}
+.btn-img {
+    border-style: none;
+}
+.btn-img:hover {
+    opacity: 0.5;
+    transition: 0.4s;
+}
+.btn-img img {
+    margin: 20px 40px;
+    width: 55px;
+    height: auto;
+}
+
+
+/*Desktop View*/
+/* ------------------------------------ */
+/* ▼PC用デザイン(大)として付け足すデザイン */
+/* ------------------------------------ */
+@media screen and (max-width: 1920px){}
+
+
+/*Desktop View*/
+/* ------------------------------------ */
+/* ▼PC用デザインとして付け足すデザイン */
+/* ------------------------------------ */
+@media screen and (max-width: 1366px) {
+    
+    .sec01 {
+        padding-top: 50px;
+    }
+    
+    .sec01 h3 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .sec01 h2 {
+        margin-top: 30px;
+        font-size: 30px;
+    }
+    
+    .sns-icons {
+        margin: 40px 0px 0px;
+    }
+    .btn-img img {
+        margin: 15px 35px;
+        width: 40px;
+    }
+}
+
+/*Tablet View*/
+/* -------------------------------------------- */
+/* ▼タブレット用デザインとして付け足すデザイン */
+/* -------------------------------------------- */
+@media screen and (max-width: 960px) {
+
+    .sec01 {
+        padding-top: 60px;
+    }
+    .sec01 h3 {
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .sec01 h2 {
+        margin-top: 24px;
+        font-size: 24px;
+    }
+    .sns-icons {
+        margin: 40px 0px;
+    }
+    .btn-img img {
+        margin: 15px 25px;
+        width: 35px;
+    }
+}
+
+/*SP View*/
+/* -------------------------------------------- */
+/* ▼SP用デザインとして付け足すデザイン(max:480!) */
+/* -------------------------------------------- */
+@media screen and (max-width: 500px) {
+
+    .sec01 h3 {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .sec01 h2 {
+        margin-top: 24px;
+        font-size: 16px;
+    }
+    .btn-img img {
+        margin: 15px 20px 0px 20px;
+        width: 30px;
+    }
+}
