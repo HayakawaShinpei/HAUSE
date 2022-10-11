@@ -1,0 +1,118 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* ポップアップウインドウの設定 */
+.pu {
+    background-color: #efefef;
+    box-shadow: 0px 0px 0px 9999px rgba(0, 0, 0, 0.5);
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 3%;
+    /*right: 0;*/
+    bottom: 0;
+    /*margin: 0px auto;*/
+    padding: 10px;
+    width: 94%;
+    height: auto;
+    overflow-y: scroll;
+  }
+  /* チェックボックスの初期設定 */
+  #pu-on {
+    display: none;
+  }
+  /* チェックされたらポップアップウインドウを開く */
+  #pu-on:checked + .pu {
+    display: block;
+  }
+  
+  /* 閉じるアイコン（右上） */
+  .icon-close {
+    background: #000;
+    color: #fff;
+    font-size: 30px;
+    padding: 10px;
+    position: fixed;
+    top: 2%;
+    cursor: pointer;
+    z-index: 20;
+  }
+  .pu-box {
+    width: 100%;
+    margin: 0px;
+    padding: 0px auto;
+  }
+  
+  /* 開くボタン */
+  .btn-open {
+    width: 100%;
+    /*background-color: #000000;*/
+    cursor: pointer;
+    /*margin: 10px auto;*/
+    text-align: center;
+  }
+  .btn-open img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+  }
+  
+  /* ポップアップの内容 */
+  .pu-content {  
+    width: 100%;
+    text-align: center;
+  }
+  .pu-content img {
+    margin-top: 10px;
+  }
+
+  .bot-coment {
+    text-align: justify;
+    margin-top: 10px;
+    line-height: 20px;
+  }
+
+  /*Desktop View*/
+/* ------------------------------------ */
+/* ▼PC用デザイン(大)として付け足すデザイン */
+/* ------------------------------------ */
+@media screen and (max-width: 1920px){}
+
+
+/*Desktop View*/
+/* ------------------------------------ */
+/* ▼PC用デザインとして付け足すデザイン */
+/* ------------------------------------ */
+@media screen and (max-width: 1366px) {
+
+  .btn-open img {
+    width: 95%;
+    height: auto;
+  }
+}
+
+/*Tablet View*/
+/* -------------------------------------------- */
+/* ▼タブレット用デザインとして付け足すデザイン */
+/* -------------------------------------------- */
+@media screen and (max-width: 960px) {
+  .btn-open img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/*SP View*/
+/* -------------------------------------------- */
+/* ▼SP用デザインとして付け足すデザイン(max:480!) */
+/* -------------------------------------------- */
+@media screen and (max-width: 500px) {
+
+  /* 閉じるアイコン（右上） */
+  .icon-close {
+    font-size: 10px;
+    padding: 5px;
+    top: 1%;
+    right: 1%;
+  }
+}
