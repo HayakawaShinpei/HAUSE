@@ -1,0 +1,286 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* --------------------------------------------- */
+/* ▼デスクトップファースト (全環境に共通のデザイン) */
+/* --------------------------------------------- */
+
+* {
+	/*padding: 0;*/
+	/*margin: 0;*/
+	box-sizing: border-box;
+    font-family: "Avenir Next", "Helvetica Neue", "Helvetica", "Arial", "Hiragino Kaku Gothic ProN W3", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "游ゴシック Medium", "meiryo", sans-serif; 
+}
+body {
+    overflow-y: scroll;
+}
+
+/*headerの内容*/
+header {
+    width: 100%;
+    height: 100px;
+    /*background-color: blueviolet;*/
+    border-bottom: 2px solid #000000;
+}
+
+.container {
+    width: 87.5%;
+    margin: 0 auto;
+}
+.logo {
+    float: left;
+}
+/*挙動怪しいから分ける*/
+.logo {
+    width: 330px;
+    height: auto;
+    margin-top: 20px;
+}
+.header-menu {
+    float: right;
+}
+header .header-menu a {
+    text-decoration: none;
+    margin: 33px 20px;
+    float: left;
+    color: #000000;
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header .header-menu a:hover {
+    opacity: 0.5;
+}
+.hamburger-menu {
+   display: none; 
+  }
+
+/*mainの内容(sec01,02)*/
+/*main {
+    見え方確認用
+    background-color: blueviolet;
+}*/
+
+/*ページ下半分の内容(sec02)*/
+.sec02 {
+    display: flex;
+    width: 100%;
+    background-color: #ffffff;
+}
+.sec02-left {
+    width: 50%;
+    text-align: center;
+}
+
+
+.sec02-left img {
+    width: 40%;
+}
+.sec02-right {
+    width: 50%;
+    color: #000000;
+    font-size: 64px;
+    font-weight: bold;
+    /*フォント制御必要？*/
+    /*font-family: Arial, Helvetica, sans-serif;*/
+    /*範囲確認用!!*/
+    /*background-color: aqua;*/
+}
+/*子要素内の上下中央揃え*/
+.sec02-right, .sec02-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sec02-right h1 {
+    border-bottom: 2px solid #000000;
+}
+
+/*自己紹介ページ用反転*/
+.sec02-right {
+    width: 50%;
+    text-align: center;
+}
+.sec02-right img {
+    width: 40%;
+}
+.sec02-left {
+    width: 50%;
+    color: #000000;
+    font-size: 64px;
+    font-weight: bold;
+    /*フォント制御必要？*/
+    /*font-family: Arial, Helvetica, sans-serif;*/
+    /*範囲確認用!!*/
+    /*background-color: aqua;*/
+}
+/*子要素内の上下中央揃え*/
+.sec02-right, .sec02-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sec02-left h1 {
+    border-bottom: 2px solid #000000;
+}
+/*自己紹介ページ用反転（ここまで）*/
+
+/*footerの内容*/
+footer {
+    width: 100%;
+    height: 40px;
+    padding: 12px 0;
+    color: #000000;
+    font-size: 16px;
+    text-align: center;
+    /*border-top: 2px solid #000000;*/
+    /*border-bottom: 2px solid #000000;*/
+}
+
+/*Desktop View*/
+/* ------------------------------------ */
+/* ▼PC用デザイン(大)として付け足すデザイン */
+/* ------------------------------------ */
+@media screen and (max-width: 1920px){
+
+    
+}
+
+/*Desktop View*/
+/* ------------------------------------ */
+/* ▼PC用デザインとして付け足すデザイン */
+/* ------------------------------------ */
+@media screen and (max-width: 1366px) {
+    
+    header {
+        height: 80px;
+    }
+    .logo {
+        width: 230px;
+    }
+    header .header-menu a {
+        margin: 30px 20px;
+        font-size: 24px;
+    }
+    .sec02-left img {
+        width: 35%;
+    }
+
+    .sec02-right {
+        font-size: 48px;
+    }
+
+    /*自己紹介ページ用反転*/
+    .sec02-right img {
+        width: 35%;
+    }
+
+    .sec02-left {
+        font-size: 48px;
+    }
+    /*自己紹介ページ用反転（ここまで）*/
+    
+    footer {
+        height: 32px;
+        padding: 8px 0;
+        font-size: 14px;
+    }
+
+}
+
+/*Tablet View*/
+/* -------------------------------------------- */
+/* ▼タブレット用デザインとして付け足すデザイン */
+/* -------------------------------------------- */
+@media screen and (max-width: 960px) {
+
+    header {
+        height: 64px;
+        border-bottom: 1px solid #000000;
+    }
+    .container {
+        width: 90%;
+    }
+    .logo {
+        width: 170px;
+        margin-top: 15px;
+    }
+    header .header-menu a {
+        margin: 25px 10px;
+        font-size: 16px;
+    }
+
+    .sec02-left img {
+        width: 70%;
+    }
+    .sec02-right {
+        font-size: 36px;
+    }
+
+    /*自己紹介ページ用反転*/
+    .sec02-right img {
+        width: 60%;
+    }
+    .sec02-left {
+        font-size: 36px;
+    }
+    /*自己紹介ページ用反転（ここまで）*/
+
+    footer {
+        height: 24px;
+        padding: 6px 0;
+        font-size: 12px;
+        /*border-top: 1px solid #000000;*/
+        /*border-bottom: 1px solid #000000;*/
+    }
+}
+
+/*SP View*/
+/* -------------------------------------------- */
+/* ▼SP用デザインとして付け足すデザイン(max:480!) */
+/* -------------------------------------------- */
+@media screen and (max-width: 500px) {
+
+    header {
+        height: 48px;
+    }
+    .container {
+        width: 95%;
+    }
+    .logo {
+        width: 155px;
+        margin-top: 10px;
+    }
+    .header-menu {
+        display: none;
+    }
+    .hamburger-menu {
+        display: block;
+    }
+
+    .sec02-left img {
+        width: 80%;
+    }
+    .sec02-right {
+        font-size: 32px;
+        /*font-weight: normal;*/
+    }
+
+    /*自己紹介ページ用反転*/
+    .sec02-right img {
+        width: 80%;
+    }
+    .sec02-left {
+        font-size: 32px;
+        /*font-weight: normal;*/
+    }
+    /*自己紹介ページ用反転（ここまで）*/
+    
+      footer {
+        height: 16px;
+        padding: 3px 0;
+        margin-top: 5px;
+        font-size: 10px;
+    }
+}
