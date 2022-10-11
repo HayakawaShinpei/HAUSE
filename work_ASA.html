@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>HAUSE | 作品紹介 | Advertisement
+    </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--電話番号の自動認識-->
+    <meta name="format-detection" content="telephone=no">
+    <!--IEの互換防止-->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <!--検索ワード-->
+    <!--<meta name="keywords" content="（半角カンマ区切りで9個位）,,,,,,,">-->
+    <!--検索エンジンで表示される紹介文的なもの-->
+    <!--<meta name="Description" content="コンテンツ紹介（120文字程度）">-->
+
+    <!--CSS読み込ませる時使うもの-->
+    <!--<link rel="stylesheet" href="#" type="text/css" media="all">-->
+    <link rel="stylesheet" href="reset.css" type="text/css" media="all">
+    <link rel="stylesheet" href="all.css" type="text/css" media="all">
+    <link rel="stylesheet" href="hamburger.css" type="text/css" media="all">
+    <link rel="stylesheet" href="tab_css.css" type="text/css" media="all">
+    <link rel="stylesheet" href="popup.css" type="text/css" media="all">
+
+  </head>
+  <body>
+    <header>
+        <div class="container">
+            <img class="logo" src="HAUSE_LOGO_W330px.png">
+            <div class="header-menu">
+                <a href="index.html">TOP</a>
+                <a href="ABOUTME.html">ABOUT ME</a>
+                <a href="CONTACT.html">CONTACT</a>
+            </div>
+            <div class="hamburger-menu">
+                <input type="checkbox" id="menu-btn-check">
+                <label for="menu-btn-check" class="menu-btn"><span></span></label>
+                <div class="menu-content">
+                    <ul>
+                        <li>
+                            <a href="index.html">TOP</a>
+                        </li>
+                        <li>
+                            <a href="ABOUTME.html">ABOUT ME</a>
+                        </li>
+                        <li>
+                            <a href="CONTACT.html">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <!--tab operation-->
+            <div class="tab-container">
+                <!--TAB button-->
+                <input id="a" type="radio" name="tab-item" checked>
+                <label class="tab-item" for="a">広告</label>
+
+                <!--<input id="b" type="radio" name="tab-item">-->
+                <!--<label class="tab-item" for="b">02</label>-->
+
+                <!--<input id="c" type="radio" name="tab-item">-->
+                <!--<label class="tab-item" for="c">03</label>-->
+
+                <!--<input id="d" type="radio" name="tab-item">-->
+                <!--<label class="tab-item" for="d">04</label>-->
+
+                <!--<input id="e" type="radio" name="tab-item">-->
+                <!--<label class="tab-item" for="e">05</label>-->
+    
+
+                <!--タブで表示されるBOX-->
+                <div id="a-content" class="tab-content">      
+                    <!--仮入れ-->
+                    <div class="PR">
+                        <div class="PR-left">
+                             <!--popup-->
+                             <div class="pu-box">
+                                <label for="pu-on" class="popup">
+                                    <div class="btn-open">
+                                         <img src="ASA_01.png">
+                                    </div>
+                                </label>
+                                <input type="checkbox" id="pu-on">
+
+                                <!--popoup on-->
+                                <div class="pu">
+                                    <label for="pu-on" class="icon-close">close</label>
+  
+                                    <!-- ポップアップの中身 -->
+                                    <div class="pu-content">
+                                        <p>クリックした画像をポップアップで表示しています</p>
+                                        <img src="ASAHI_big.png" alt="" >
+                                        <p class="bot-coment">言葉の意味を知らずに読むと、夜道を照らす街路灯やメインコピーが社名に掛かっているだけの広告で、「読書には学びがある」ということを大雑把に伝えているような内容になります。しかし、「明るい＝物事に精通している」という意味があることを知っていると、「みち＝未知」と解釈することもでき、「読書で未知は既知になる」と他の読み方ができるようになっています。</p>
+                                    </div>
+                                    <!-- ./ポップアップの中身　ここまで -->
+                                </div>
+                            </div>
+                            <!--popoup fin-->
+                        </div>
+                        <div class="PR-right">
+                            <p>様々な分野の「知」を発信している光文社新書のユニークさを表現してほしいという課題の広告です。本や出版社の広告らしさが出るように読み方や言葉で遊びのある内容にしたいと考えて制作しました。<br>（＊画像を押すと拡大表示できます。）</p>
+                        </div>
+                    </div>
+                    <!--仮fin-->
+                </div>
+    
+            </div>
+
+            
+            
+
+            <div class="sec02">
+                <div class="sec02-left">
+                    <h1>MY WORKS</h1>
+                </div>
+                <div class="sec02-right">
+                    <img src="WORK_illust_W330H330.png">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>©2022 ShinpeiHayakawa All Rights Reserved.</p>
+    </footer>
+
+  </body>
+</html>
