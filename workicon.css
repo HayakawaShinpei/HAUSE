@@ -1,0 +1,116 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* --------------------------------------------- */
+/* ▼デスクトップファースト (全環境に共通のデザイン) */
+/* --------------------------------------------- */
+
+.sec01 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: #ffffff;
+    padding-top: 50px;
+}
+.thumbnail {
+    width: 25%;
+    /*background-color: blue;*/
+    /*border: 2px solid black;*/
+}
+.smallbox {
+    margin: 0px auto;
+    padding-bottom: 10px;
+    width: 80%;
+    color: #000000;
+    /*background-color: #ffffff;*/
+}
+.smallbox img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 12px;
+    border: 1px solid #000000;
+}
+.smallbox a {
+    text-decoration: none;
+    color: #000000;
+}
+.smallbox a:hover {
+    opacity: 0.6;
+    transition: 0.8s;
+}
+.smallbox span {
+    color: #ffffff;
+}
+h4 {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+h5 {
+    font-size: 18px;
+    line-height: 27px;
+}
+
+/*Desktop View*/
+/* ------------------------------------ */
+/* ▼PC用デザイン(大)として付け足すデザイン */
+/* ------------------------------------ */
+@media screen and (max-width: 1920px){}
+
+
+/*Desktop View*/
+/* ------------------------------------ */
+/* ▼PC用デザインとして付け足すデザイン */
+/* ------------------------------------ */
+@media screen and (max-width: 1366px) {
+
+    .sec01 {
+        padding-top: 30px;
+    }
+    h4 {
+        font-size: 18px;
+        line-height: 27px;
+    }
+    h5 {
+        font-size: 12px;
+        line-height: 18px;
+    }
+}
+
+/*Tablet View*/
+/* -------------------------------------------- */
+/* ▼タブレット用デザインとして付け足すデザイン */
+/* -------------------------------------------- */
+@media screen and (max-width: 960px) {
+    .sec01 {
+        padding-top: 20px;
+    }
+    .thumbnail {
+        width: 50%;
+    }
+    .smallbox img {
+        margin-bottom: 8px;
+    }
+    h4 {
+        margin-bottom: 6px;
+    }
+}
+
+/*SP View*/
+/* -------------------------------------------- */
+/* ▼SP用デザインとして付け足すデザイン(max:480!) */
+/* -------------------------------------------- */
+@media screen and (max-width: 500px) {
+    .smallbox img {
+        margin-bottom: 5px;
+    }
+    h4 {
+        font-size: 12px;
+        line-height: 18px;
+        /*font-weight: normal;*/
+    }
+    h5 {
+        display: none;
+    }
+}
