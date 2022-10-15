@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>HAUSE | 作品紹介 | LINE
+    </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--電話番号の自動認識-->
+    <meta name="format-detection" content="telephone=no">
+    <!--IEの互換防止-->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <!--検索ワード-->
+    <!--<meta name="keywords" content="（半角カンマ区切りで9個位）,,,,,,,">-->
+    <!--検索エンジンで表示される紹介文的なもの-->
+    <!--<meta name="Description" content="コンテンツ紹介（120文字程度）">-->
+
+    <!--CSS読み込ませる時使うもの-->
+    <!--<link rel="stylesheet" href="#" type="text/css" media="all">-->
+    <link rel="stylesheet" href="reset.css" type="text/css" media="all">
+    <link rel="stylesheet" href="all.css" type="text/css" media="all">
+    <link rel="stylesheet" href="hamburger.css" type="text/css" media="all">
+    <link rel="stylesheet" href="tab_css.css" type="text/css" media="all">
+    <link rel="stylesheet" href="popup.css" type="text/css" media="all">
+
+  </head>
+  <body>
+    <header>
+        <div class="container">
+            <img class="logo" src="HAUSE_LOGO_W330px.png">
+            <div class="header-menu">
+                <a href="TOP.html">TOP</a>
+                <a href="ABOUTME.html">ABOUT ME</a>
+                <a href="CONTACT.html">CONTACT</a>
+            </div>
+            <div class="hamburger-menu">
+                <input type="checkbox" id="menu-btn-check">
+                <label for="menu-btn-check" class="menu-btn"><span></span></label>
+                <div class="menu-content">
+                    <ul>
+                        <li>
+                            <a href="TOP.html">TOP</a>
+                        </li>
+                        <li>
+                            <a href="ABOUTME.html">ABOUT ME</a>
+                        </li>
+                        <li>
+                            <a href="CONTACT.html">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <!--tab operation-->
+            <div class="tab-container">
+                <!--TAB button-->
+                <input id="a" type="radio" name="tab-item" checked>
+                <label class="tab-item" for="a">着せかえ</label>
+
+                <!--<input id="b" type="radio" name="tab-item">-->
+                <!--<label class="tab-item" for="b">02</label>-->
+
+                <!--<input id="c" type="radio" name="tab-item">-->
+                <!--<label class="tab-item" for="c">03</label>-->
+
+                <!--<input id="d" type="radio" name="tab-item">-->
+                <!--<label class="tab-item" for="d">04</label>-->
+
+                <!--<input id="e" type="radio" name="tab-item">-->
+                <!--<label class="tab-item" for="e">05</label>-->
+    
+
+                <!--タブで表示されるBOX-->
+                <div id="a-content" class="tab-content">      
+                    <!--仮入れ-->
+                    <div class="PR">
+                        <div class="PR-left">
+                             <!--popup-->
+                             <div class="pu-box">
+                                <label for="pu-on" class="popup">
+                                    <div class="btn-open">
+                                         <img src="LINE_01.png">
+                                    </div>
+                                </label>
+                                <input type="checkbox" id="pu-on">
+
+                                <!--popoup on-->
+                                <div class="pu">
+                                    <label for="pu-on" class="icon-close">close</label>
+  
+                                    <!-- ポップアップの中身 -->
+                                    <div class="pu-content">
+                                        <p>クリックした画像をポップアップで表示しています</p>
+                                        <img src="LINE_all.png" alt="" >
+                                    </div>
+                                    <!-- ./ポップアップの中身　ここまで -->
+                                </div>
+                            </div>
+                            <!--popoup fin-->
+                        </div>
+                        <div class="PR-right">
+                            <p>自分の好きなテーマである「ヒエログリフ」と「星座」を掛け合わせたLINEの着せかえ用デザインを制作しました。<br>（＊画像を押すと拡大表示できます。）</p>
+                        </div>
+                    </div>
+                    <!--仮fin-->
+                </div>
+    
+            </div>
+
+            
+            
+
+            <div class="sec02">
+                <div class="sec02-left">
+                    <h1>MY WORKS</h1>
+                </div>
+                <div class="sec02-right">
+                    <img src="WORK_illust_W330H330.png">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>©2022 ShinpeiHayakawa All Rights Reserved.</p>
+    </footer>
+
+  </body>
+</html>
